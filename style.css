@@ -1,0 +1,68 @@
+:root{
+    --cor-busca: #5913b441;
+    --cor-hover: 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    padding: 1%;
+}
+
+header{
+    width: 100%;
+}
+
+.displayFlex{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gapCabecalho{
+    gap:15%
+}
+
+.gapCabecalhoBotoes{
+    gap:10%
+}
+
+.bordaBusca{
+    border: 1px solid var(--cor-busca);
+    padding: 5px 10px;
+}
+
+.bordaBusca:hover{
+
+}
+
+.inputBusca{
+    border: none;
+    outline: none;
+    color: #5913b441;
+}
+
+.inputBusca::placeholder{
+    color: var(--cor-busca);
+}
+
+.botaoBusca{
+
+}
+
+.removeDecoration{
+    text-decoration: none;
+}
+
+.quebraDeLinha{
+    white-space: nowrap;
+}
+
+.displayFlexAmbienteV{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
