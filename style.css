@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root{
     --cor-busca: #5913b441;
-    --cor-hover: 
+    --cor-hover-texto: #5913b4;
+    --cor-primaria-fonte: #3B1270;
 }
 
 *{
@@ -8,61 +11,108 @@
     padding: 0;
 }
 
-nav{
-    padding: 1%;
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, p{
+    color: var(--cor-primaria-fonte);
+    font-weight: 400;
 }
 
 header{
     width: 100%;
 }
 
+nav{
+    padding: 1%;
+}
+/* Classe para o display flex */
 .displayFlex{
-    display:flex;
+    display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
+/* Gap do cabeçalho */
 .gapCabecalho{
-    gap:15%
+    gap: 20%;
 }
 
-.gapCabecalhoBotoes{
-    gap:10%
+/* espaçamento dos botões */
+.gapCabecalhoBotes{
+    gap: 15%;
 }
 
+/* Borda do buscar */
 .bordaBusca{
     border: 1px solid var(--cor-busca);
     padding: 5px 10px;
+    gap: 3rem;
 }
 
 .bordaBusca:hover{
-
+    border: 1px solid var(--cor-hover-texto);
 }
 
+/* Iputs de busca no blog */
 .inputBusca{
     border: none;
     outline: none;
-    color: #5913b441;
+    color: #5913b489;
 }
 
 .inputBusca::placeholder{
     color: var(--cor-busca);
 }
 
-.botaoBusca{
+/* Fim do input de busca */
 
+/* Imagem de lupa na barra de busca */
+.botaoBusca{
+    border: none;
+    background: none;
+    cursor: pointer;
 }
 
+/* Remoção do text decoration */
 .removeDecoration{
     text-decoration: none;
 }
 
+/* removendo quebra de linha */
 .quebraDeLinha{
     white-space: nowrap;
 }
 
+/* Display felx do ambiente virtual */
 .displayFlexAmbienteV{
     display: flex;
     align-items: center;
     gap: 5px;
 }
+
+/* Versão tablet */
+@media screen and (max-width: 1024px){
+    .displayFlex{
+        flex-wrap: wrap;
+    }
+
+    .marginResponsiva{
+        margin: 5% 0;
+    }
+
+    .tamanhoBotaoCabecalho{
+        width: 70px;
+        height: auto;
+        text-align: center;;
+    }
+
+    .marginBotaoCabecalho{
+        margin: 10% 0;
+    }
+}
+
+/*Versão Mobile*/
+
+/*Fim Cabeçalho*/
